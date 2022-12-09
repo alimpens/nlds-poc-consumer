@@ -84,26 +84,6 @@ function App() {
               </li>
             ))}
           </List>
-          <Heading styleLevel={5} className="amsterdam-space-block-end-xs">
-            Veelbezocht
-          </Heading>
-          <List className="amsterdam-space-block-end-l">
-            <li>
-              <Link href="/" variant="inList">
-                Styled with inline styles
-              </Link>
-            </li>
-            <li>
-              <Link href="/" variant="inList">
-                Styled with styled components
-              </Link>
-            </li>
-            <li>
-              <Link href="/" variant="inList">
-                Styled with local css
-              </Link>
-            </li>
-          </List>
         </GridItem>
         <GridItem spanLarge={8} startLarge={5}>
           <img
