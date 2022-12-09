@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3b91dfda.css",
+    "main.js": "./static/js/main.74854039.js",
+    "static/js/787.ab11f8f2.chunk.js": "./static/js/787.ab11f8f2.chunk.js",
+    "static/media/AmsterdamSans-BoldItalic.woff": "./static/media/AmsterdamSans-BoldItalic.80b0d7ed4a21480cbaf8.woff",
+    "static/media/AmsterdamSans-Italic.woff": "./static/media/AmsterdamSans-Italic.1213aed84f5d4844d446.woff",
+    "static/media/AmsterdamSans-Bold.woff": "./static/media/AmsterdamSans-Bold.f45c5f2a2c54e3413bdf.woff",
+    "static/media/AmsterdamSans-ExtraBold.woff": "./static/media/AmsterdamSans-ExtraBold.88328614ce1badd9320d.woff",
+    "static/media/AmsterdamSans-Light.woff": "./static/media/AmsterdamSans-Light.ee2b4283588842753a89.woff",
+    "static/media/AmsterdamSans-Regular.woff": "./static/media/AmsterdamSans-Regular.5108c7cca2746dc57aae.woff",
+    "static/media/AmsterdamSans-BoldItalic.eot": "./static/media/AmsterdamSans-BoldItalic.ea0fd0254dc14f43a045.eot",
+    "static/media/AmsterdamSans-Italic.eot": "./static/media/AmsterdamSans-Italic.a6e05af7747e6c872c4d.eot",
+    "static/media/AmsterdamSans-Bold.eot": "./static/media/AmsterdamSans-Bold.d630fcc93396d2525eab.eot",
+    "static/media/AmsterdamSans-ExtraBold.eot": "./static/media/AmsterdamSans-ExtraBold.b876444b92b0e4247721.eot",
+    "static/media/AmsterdamSans-Light.eot": "./static/media/AmsterdamSans-Light.dac30649f88cce9a6bd3.eot",
+    "static/media/AmsterdamSans-Regular.eot": "./static/media/AmsterdamSans-Regular.5583bc50fc87ef46ba53.eot",
+    "static/media/AmsterdamSans-BoldItalic.woff2": "./static/media/AmsterdamSans-BoldItalic.f3fbcf11bb1ae99352d0.woff2",
+    "static/media/AmsterdamSans-Italic.woff2": "./static/media/AmsterdamSans-Italic.1ce65432c2d9effe5540.woff2",
+    "static/media/AmsterdamSans-Bold.woff2": "./static/media/AmsterdamSans-Bold.dd50dface05f64e97d1c.woff2",
+    "static/media/AmsterdamSans-Light.woff2": "./static/media/AmsterdamSans-Light.7fdff4ceecd308e10842.woff2",
+    "static/media/AmsterdamSans-ExtraBold.woff2": "./static/media/AmsterdamSans-ExtraBold.4a8107d18f025118acde.woff2",
+    "static/media/AmsterdamSans-Regular.woff2": "./static/media/AmsterdamSans-Regular.2c05650fbcb70e9eee95.woff2",
+    "index.html": "./index.html",
+    "main.3b91dfda.css.map": "./static/css/main.3b91dfda.css.map",
+    "main.74854039.js.map": "./static/js/main.74854039.js.map",
+    "787.ab11f8f2.chunk.js.map": "./static/js/787.ab11f8f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b91dfda.css",
+    "static/js/main.74854039.js"
+  ]
+}
