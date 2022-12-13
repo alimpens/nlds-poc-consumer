@@ -1,0 +1,10 @@
+.link-with-class {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 157, 236, 1) 33%,
+    rgba(160, 0, 120, 1) 66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

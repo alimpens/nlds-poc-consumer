@@ -16,31 +16,52 @@ import "@amsterdam/components-css/dist/list/list.css";
 import "@amsterdam/components-css/dist/link/link.css";
 import "@amsterdam/components-css/dist/icon/icon.css";
 import Card from "./components/Card";
+import {
+  Alert,
+  Ball,
+  Calendar,
+  Data,
+  Eclipse,
+  Facebook,
+  HandEuroCoin,
+  IdentityCard,
+  ChevronRight,
+} from "@amsterdam/icons-react";
+import "./App.css";
+import styled from "styled-components";
 
 const linkList = [
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Alert />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Ball />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Calendar />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Data />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Eclipse />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <Facebook />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <HandEuroCoin />,
   },
   {
     title: "Lorem ipsum dolor sit amet",
+    icon: <IdentityCard />,
   },
 ];
 
@@ -67,6 +88,17 @@ const cardList = [
   },
 ];
 
+const StyledLink = styled(Link)`
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(236, 0, 0, 1) 33%,
+    rgba(0, 157, 236, 1) 66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
 function App() {
   return (
     <div className="amsterdam-theme amsterdam-space-block-start-l">
@@ -76,13 +108,48 @@ function App() {
             Snel regelen
           </Heading>
           <List className="amsterdam-space-block-end-l">
-            {linkList.map((item, index) => (
+            {linkList.map(({ icon, title }, index) => (
               <li key={index}>
-                <Link href="/" variant="inList">
-                  {item.title}
+                <Link href="/" variant="inList" iconLeft={icon}>
+                  {title}
                 </Link>
               </li>
             ))}
+          </List>
+          <Heading styleLevel={5} className="amsterdam-space-block-end-xs">
+            Styling opties
+          </Heading>
+          <List>
+            <li>
+              <Link
+                href="/"
+                variant="inList"
+                iconLeft={<ChevronRight />}
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,70,153,1) 33%, rgba(0,160,60,1) 66%)",
+                  "-webkit-background-clip": "text",
+                  "-webkit-text-fill-color": "transparent",
+                }}
+              >
+                Gestijld met inline styling
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                variant="inList"
+                iconLeft={<ChevronRight />}
+                className="link-with-class"
+              >
+                Gestijld met className
+              </Link>
+            </li>
+            <li>
+              <StyledLink href="/" variant="inList" iconLeft={<ChevronRight />}>
+                Gestijld met styled-components
+              </StyledLink>
+            </li>
           </List>
         </GridItem>
         <GridItem spanLarge={8} startLarge={5}>
