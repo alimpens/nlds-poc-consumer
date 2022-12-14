@@ -25,7 +25,6 @@ import {
   Facebook,
   HandEuroCoin,
   IdentityCard,
-  ChevronRight,
 } from "@amsterdam/icons-react";
 import "./App.css";
 import styled from "styled-components";
@@ -110,7 +109,7 @@ function App() {
           <List className="amsterdam-space-block-end-l">
             {linkList.map(({ icon, title }, index) => (
               <li key={index}>
-                <Link href="/" variant="inList" iconLeft={icon}>
+                <Link href="/" variant="inList" icon={icon}>
                   {title}
                 </Link>
               </li>
@@ -124,29 +123,23 @@ function App() {
               <Link
                 href="/"
                 variant="inList"
-                iconLeft={<ChevronRight />}
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,70,153,1) 33%, rgba(0,160,60,1) 66%)",
-                  "-webkit-background-clip": "text",
-                  "-webkit-text-fill-color": "transparent",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}
               >
                 Gestijld met inline styling
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                variant="inList"
-                iconLeft={<ChevronRight />}
-                className="link-with-class"
-              >
+              <Link href="/" variant="inList" className="link-with-class">
                 Gestijld met className
               </Link>
             </li>
             <li>
-              <StyledLink href="/" variant="inList" iconLeft={<ChevronRight />}>
+              <StyledLink href="/" variant="inList">
                 Gestijld met styled-components
               </StyledLink>
             </li>
