@@ -1,6 +1,7 @@
 import "@amsterdam/design-tokens/dist/index.css";
 import "@amsterdam/font/static/index.css";
 import "@amsterdam/components-css/dist/document/document.css";
+import "@amsterdam/components-css/dist/spacing/spacing.css";
 import {
   Paragraph,
   Grid,
@@ -98,10 +99,18 @@ const StyledLink = styled(Link)`
   -webkit-text-fill-color: transparent;
 `;
 
+const StyledListItem = styled.li`
+  @media (min-width: 51.25rem) {
+    &:nth-child(even) {
+      margin-top: 80px;
+    }
+  }
+`;
+
 function App() {
   return (
-    <div className="amsterdam-theme amsterdam-space-block-start-l">
-      <Grid>
+    <div className="amsterdam-theme">
+      <Grid className="amsterdam-space-block-start-l">
         <GridItem spanLarge={3}>
           <Heading styleLevel={5} className="amsterdam-space-block-end-xs">
             Snel regelen
@@ -118,7 +127,7 @@ function App() {
           <Heading styleLevel={5} className="amsterdam-space-block-end-xs">
             Styling opties
           </Heading>
-          <List>
+          <List className="amsterdam-space-block-end-l">
             <li>
               <Link
                 href="/"
@@ -174,11 +183,11 @@ function App() {
           <Heading styleLevel={2} className="amsterdam-space-block-end-m">
             Nieuws uit Amsterdam
           </Heading>
-          <List className="amsterdam-grid">
+          <List className="amsterdam-subgrid-span-4 amsterdam-subgrid-span-8--large">
             {cardList.map((item) => (
-              <li
+              <StyledListItem
                 key={item.title}
-                className="amsterdam-col-span-4 amsterdam-col-span-6--large amsterdam-space-block-end-l"
+                className="amsterdam-col-span-4 amsterdam-space-block-end-l"
               >
                 <Card>
                   <img
@@ -190,7 +199,7 @@ function App() {
                   <Heading styleLevel={5}>{item.title}</Heading>
                   <Paragraph variant="small">{item.teaser}</Paragraph>
                 </Card>
-              </li>
+              </StyledListItem>
             ))}
           </List>
         </GridItem>
