@@ -1,7 +1,7 @@
-import "@amsterdam/design-tokens/dist/root.css";
-import "@amsterdam/font/static/index.css";
-import "@amsterdam/components-css/dist/document/document.css";
-import "@amsterdam/components-css/dist/spacing/spacing.css";
+import "@amsterdam/design-system-tokens/dist/root.css";
+import "@amsterdam/design-system-font/static/index.css";
+import "@amsterdam/design-system-css/dist/document/document.css";
+import "@amsterdam/design-system-css/dist/spacing/spacing.css";
 import {
   Paragraph,
   Grid,
@@ -9,13 +9,13 @@ import {
   Heading,
   List,
   Link,
-} from "@amsterdam/components-react";
-import "@amsterdam/components-css/dist/paragraph/paragraph.css";
-import "@amsterdam/components-css/dist/grid/grid.css";
-import "@amsterdam/components-css/dist/heading/heading.css";
-import "@amsterdam/components-css/dist/list/list.css";
-import "@amsterdam/components-css/dist/link/link.css";
-import "@amsterdam/components-css/dist/icon/icon.css";
+} from "@amsterdam/design-system-react";
+import "@amsterdam/design-system-css/dist/paragraph/paragraph.css";
+import "@amsterdam/design-system-css/dist/grid/grid.css";
+import "@amsterdam/design-system-css/dist/heading/heading.css";
+import "@amsterdam/design-system-css/dist/list/list.css";
+import "@amsterdam/design-system-css/dist/link/link.css";
+import "@amsterdam/design-system-css/dist/icon/icon.css";
 import Card from "./components/Card";
 import {
   Alert,
@@ -26,7 +26,7 @@ import {
   Facebook,
   HandEuroCoin,
   IdentityCard,
-} from "@amsterdam/icons-react";
+} from "@amsterdam/design-system-react-icons";
 import "./App.css";
 import styled from "styled-components";
 
